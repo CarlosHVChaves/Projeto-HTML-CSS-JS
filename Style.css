@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0077ff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 2px 0px 2px #000000;
+  animation: mymove 1.5s;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 18px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.sidenav button {
+  margin: 18px;
+  padding: 6px 6px 6px 6px;
+  border-radius: 5px;
+  font-size: 23px;
+  box-shadow: 2px 0px 2px #000000;
+  background-color: #ffffff;
+}
+
+.sidenav button:hover {
+  color: #ffffff;
+  background-color: #0036ac
+}
+
+.sidenav i {
+  margin-right: 5px;
+}
+
+/* .Menu {
+  margin-left: 220px;
+} */
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@keyframes mymove {
+  from {left: -220px;}
+  to {left: 0px;}
+}
