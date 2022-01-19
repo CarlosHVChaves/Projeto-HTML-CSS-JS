@@ -35,10 +35,9 @@ body {
 .sidenav button {
   margin: 18px;
   padding: 6px 6px 6px 6px;
-  border-radius: 5px;
   font-size: 23px;
-  box-shadow: 2px 0px 2px #000000;
   background-color: #ffffff;
+  border: None;
 }
 
 .sidenav button:hover {
