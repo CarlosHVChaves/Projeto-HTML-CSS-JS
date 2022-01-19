@@ -11,16 +11,25 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #0077ff;
   overflow-x: hidden;
   padding-top: 20px;
   border-radius: 0px 10px 10px 0px;
-  box-shadow: 2px 0px 2px #000000;
-  animation: mymove 1.5s;
+  box-shadow: 2px 0px 5px #000000;
+  /* Animação de fazer aparecer a sidenav */
+  animation: movesidenav 1.5s;
+  /* Efeito céu estrelado */
+  background-color: #0077ff;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 .sidenav a {
-  padding: 6px 6px 6px 18px;
+  padding: 5px 5px 5px 15px;
   text-decoration: none;
   font-size: 23px;
   color: #ffffff;
@@ -29,20 +38,20 @@ body {
 
 .sidenav a:hover {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #ffffffa6;
 }
 
 .sidenav button {
   margin: 18px;
-  padding: 6px 6px 6px 6px;
+  padding: 5px 5px 5px 5px;
   font-size: 23px;
-  background-color: #ffffff;
+  background-color: #ffffffa6;
   border: None;
 }
 
 .sidenav button:hover {
   color: #ffffff;
-  background-color: #0036ac
+  background-color: #0037ac8f
 }
 
 .sidenav i {
@@ -58,7 +67,7 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-@keyframes mymove {
+@keyframes movesidenav {
   from {left: -220px;}
   to {left: 0px;}
 }
