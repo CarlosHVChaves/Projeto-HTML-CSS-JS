@@ -6,7 +6,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 220px;
+  width: 245px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -20,11 +20,11 @@ body {
   /* Efeito céu estrelado */
   background-color: #0077ff;
   background-image:
-  radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 20px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 15px),
+  radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 20px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 15px);
+  background-size: 300px 300px, 200px 200px, 150px 150px, 100px 100px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
@@ -38,12 +38,12 @@ body {
 
 .sidenav a:hover {
   color: #000000;
-  background-color: #ffffffa6;
+  background-color: #0037ac65;
 }
 
 .sidenav button {
-  margin: 18px;
-  padding: 5px 5px 5px 5px;
+  margin: 15px;
+  padding: 10px;
   font-size: 23px;
   background-color: #ffffffee;
   border: None;
@@ -51,11 +51,15 @@ body {
 
 .sidenav button:hover {
   color: #ffffff;
-  background-color: #0037ac8f
+  background-color: #0051ff8f
 }
 
 .sidenav i {
-  margin-right: 5px;
+  margin-right: 7px;
+}
+
+.sidenav a i.bi.bi-caret-right-fill {
+  float: right;
 }
 
 /* .Menu {
@@ -68,6 +72,6 @@ body {
 }
 
 @keyframes movesidenav {
-  from {left: -220px;}
+  from {left: -245px;}
   to {left: 0px;}
 }
